@@ -1,0 +1,19 @@
+$margin-top-none: 0;
+$margin-bottom-none: 0;
+
+$text-right: right;
+$text-left: left;
+$text-center: center;
+
+$border-top-solid: solid;
+$border-bottom-solid: solid;
+$border-left-solid: solid;
+$border-right-solid: solid;
+
+
+//center content
+%center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

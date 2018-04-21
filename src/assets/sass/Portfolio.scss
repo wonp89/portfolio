@@ -1,0 +1,20 @@
+@import 'base/_base.settings';
+@import 'base/_base.mixins';
+@import 'base/_base.pallet';
+@import 'base/_base.images';
+@import 'base/_base.fonts';
+
+#portfolioBackground {
+    @include background-image($middle-background, 100vw, 70%);
+    @extend %center-content;
+    > #portfolioHeader {
+        > h1 {
+            @include font-decoration($header-font-size, $font-weight-lighter, $header-font-family, $text-center);
+            @include header-decoration(0, 0, solid, solid);
+        }
+        > p {
+            text-align: $text-center;
+        }
+    }
+    
+}

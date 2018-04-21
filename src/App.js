@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
-import HomePage from './components/Home.js';
+import Header from './components/Header.js';
+import Intro from './components/Intro.js';
+import Portfolio from './components/Portfolio.js';
+import PortfolioList from './components/PortfolioList.js';
 
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>My portfolio website</h1>
-        <HomePage />
+        <Header />
+        <Intro />
+        <Portfolio />
+        <PortfolioList />
       </div>
     );
   }

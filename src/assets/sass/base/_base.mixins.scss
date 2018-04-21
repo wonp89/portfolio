@@ -1,0 +1,41 @@
+//background-image
+@mixin background-image(
+    $imgpath, 
+    $width, 
+    $height, 
+    $size: cover, 
+    $position: center,
+    $repeat: no-repeat
+    ) {
+        background-image: url($imgpath);
+        width: $width;
+        height: $height;
+        background-size: $size;
+        background-position: $position;
+        background-repeat: $repeat;
+    }
+
+@mixin header-decoration(
+    $top,
+    $bottom,
+    $border-top,
+    $border-bottom
+) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+    border-top: $border-top;
+    border-bottom: $border-bottom;
+}
+
+//font size, weight, family
+@mixin font-decoration(
+    $size,
+    $weight,
+    $family,
+    $location
+) {
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $family;
+    text-align: $location;
+}

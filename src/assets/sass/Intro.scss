@@ -1,0 +1,40 @@
+@import 'base/_base.settings';
+@import 'base/_base.mixins';
+@import 'base/_base.pallet';
+@import 'base/_base.images';
+@import 'base/_base.fonts';
+
+#introBackground{
+    @include background-image($intro-background, 100vw, 100%);
+        //container    
+        > div { 
+            //flex container
+            > div {
+                @extend %center-content;
+                height: 100%;
+                //row
+                > div {
+                    > p {
+                        @include font-decoration($intro-font-size, $font-weight-bold, $header-font-family, $text-center);
+                        border-bottom: $border-bottom-solid 1px;
+                        padding-bottom: 5px;
+                        margin: 20px;
+                        margin-bottom: 50px;
+                    }
+
+                    .introTextContainer { 
+                        text-align: center;
+                        > h4 {
+                            color: grey;
+                            font-family: $header-font-family;
+                            font-weight: $font-weight-lighter;
+                        }
+                        > p {
+                            font-size: $intro-font-size-p;
+                        }
+                    }
+                    
+                }
+            }
+        }
+}
