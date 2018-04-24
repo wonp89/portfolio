@@ -13,10 +13,10 @@ class PortfolioList extends Component {
                         <Row className={classes.portfolioList}>
                             <h3>SUSHI FIELD</h3>
                             <p className={classes.dotDecoration}>•</p>
-                            <Col xs={6} md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
+                            <Col md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
                                 <img src="../src/assets/images/portfolio5-1.png" />
                             </Col>
-                            <Col xs={6} md={6}>
+                            <Col md={6} >
                                 <img src="../src/assets/images/portfolio5-2.png" />
                             </Col>
                             <p className={classes.dotDecoration}>•</p>
@@ -30,10 +30,10 @@ class PortfolioList extends Component {
                         <Row className={classes.portfolioList}>
                             <h3>MILL BAY SUSHI</h3>
                             <p className={classes.dotDecoration}>•</p>
-                            <Col xs={6} md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
+                            <Col md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
                                 <img src="../src/assets/images/portfolio4-1.png" />
                             </Col>
-                            <Col xs={6} md={6}>
+                            <Col md={6}>
                                 <img src="../src/assets/images/portfolio4-2.png" />
                             </Col>
                             <p className={classes.dotDecoration}>•</p>
@@ -47,10 +47,10 @@ class PortfolioList extends Component {
                         <Row className={classes.portfolioList}>
                             <h3>MAZE RUNNER</h3>
                             <p className={classes.dotDecoration}>•</p>
-                            <Col xs={6} md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
+                            <Col md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
                                 <img src="../src/assets/images/portfolio3-1.png" />
                             </Col>
-                            <Col xs={6} md={6}>
+                            <Col md={6}>
                                 <img src="../src/assets/images/portfolio3-2.png" />
                             </Col>
                             <p className={classes.dotDecoration}>•</p>
@@ -64,10 +64,10 @@ class PortfolioList extends Component {
                         <Row className={classes.portfolioList}>
                             <h3>ORDER HELPER</h3>
                             <p className={classes.dotDecoration}>•</p>
-                            <Col xs={6} md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
+                            <Col md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
                                 <img src="../src/assets/images/portfolio2-1.png" />
                             </Col>
-                            <Col xs={6} md={6}>
+                            <Col md={6}>
                                 <img src="../src/assets/images/portfolio2-2.png" />
                             </Col>
                             <p className={classes.dotDecoration}>•</p>
@@ -81,10 +81,10 @@ class PortfolioList extends Component {
                         <Row className={classes.portfolioList}>
                             <h3>FORCE OF NATURE</h3>
                             <p className={classes.dotDecoration}>•</p>
-                            <Col xs={6} md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
+                            <Col md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
                                 <img src="../src/assets/images/portfolio1-1.png" />
                             </Col>
-                            <Col xs={6} md={6}>
+                            <Col md={6}>
                                 <img src="../src/assets/images/portfolio1-2.png" />
                             </Col>
                             <p className={classes.dotDecoration}>•</p>

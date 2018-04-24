@@ -62,6 +62,19 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.LoaderOptionsPlugin({
+            test: /\.(css|scss|sass)$/,
+            options: {
+              postcss: [
+                require('postcss-import')(),
+                require('postcss-url')(),
+                require('postcss-cssnext')({
+                  browsers: 'last 2 versions'
+                })
+              ],
+              context: path.resolve(__dirname, "src")
+            }
+          }),
         new HtmlWebpackPlugin({
             template: __dirname + '/src/index.html',
             filename: 'index.html',

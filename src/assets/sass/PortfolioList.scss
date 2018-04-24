@@ -15,7 +15,7 @@ img { width: 100% }
         @include add-space(margin-bottom, 10%);
         @include add-space(padding, 2%);
         > h3 {
-            @include font-decoration(50px, $font-weight-bold, $header-font-family, $text-center);
+            @include font-decoration(50px, $font-weight-lighter, $header-font-family, $text-center);
             @include  portfolio-border(border-bottom);
             color: $portfolio-liner-color;
             @include add-space(margin-bottom, 10px);
@@ -35,8 +35,8 @@ img { width: 100% }
         > .technologies {
             @include portfolio-border(border-top);
             color: $portfolio-liner-color;
-            margin-bottom: $margin-bottom-none;
-            padding-bottom: $padding-bottom-none;
+            margin-bottom: $margin-none;
+            padding-bottom: $padding-none;
             font-family: $header-font-family;
             font-size: $small-font-size;
         }

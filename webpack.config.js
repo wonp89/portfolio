@@ -2,7 +2,8 @@ const path = require('path');
 const autoprefixer = require('autoprefixer');
 const mqpacker = require('css-mqpacker');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const webpack = require('webpack');
 
 module.exports = {
     devtool: 'cheap-module-eval-source-map',
@@ -62,6 +63,19 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.LoaderOptionsPlugin({
+            test: /\.(css|scss|sass)$/,
+            options: {
+              postcss: [
+                require('postcss-import')(),
+                require('postcss-url')(),
+                require('postcss-cssnext')({
+                  browsers: 'last 2 versions'
+                })
+              ],
+              context: path.resolve(__dirname, "src")
+            }
+          }),
         new HtmlWebpackPlugin({
             template: __dirname + '/src/index.html',
             filename: 'index.html',

@@ -7,16 +7,16 @@ class Header extends Component {
         return (
             <div id={classes.contactBackground}>
                 <div id={classes.header}>
-                    <h1></h1>
+                    <h1>CONTACT</h1>
                     <p>wonpark89@gmail.com</p>
                     <div>
-                        <a href="https://www.github.com/wonp89" target="_blank">github.com/wonp89</a>
+                        <a href="https://www.linkedin.com/in/wonpark89" target="_blank">linkedin.com/in/wonpark89</a>
                     </div>
                     <div>
                         <p></p>
                     </div>
                     <div>
-                        <a href="https://www.linkedin.com/in/wonpark89" target="_blank">linkedin.com/in/wonpark89</a>
+                        <a href="https://www.github.com/wonp89" target="_blank">github.com/wonp89</a>
                     </div>
                 </div>
             </div>

@@ -9,8 +9,19 @@
     @extend %center-content;
     color: white;
     > #header { 
+        > h1 {
+            @include font-decoration($header-font-size, $font-weight-lighter, $header-font-family, $text-center);
+            @include add-space(margin-bottom, 20px);
+            @include add-space(margin-top, -20px);
+            // @extend %black-and-white;
+        }
+
+        > p:first-of-type {
+            font-size: $large-font-size;
+        }
         text-align: $text-center;
         > div > a {
+            font-size: $large-font-size;
             color: white;
         }
     }

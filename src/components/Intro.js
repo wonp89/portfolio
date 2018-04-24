@@ -18,7 +18,7 @@ class Intro extends Component {
                             <Media>
                                 <Media.Body>
                                     <div className={classes.introTextContainer}>
-                                        <Media.Heading>FRONT END</Media.Heading>
+                                        <Media.Heading><span>FRONT END</span></Media.Heading>
                                         <p>JavaScript, Typescript, Ruby, HTML5, CSS3, SASS, ReactJS, Redux, Angular, jQuery</p>
                                     </div>
                                 </Media.Body>
@@ -26,7 +26,7 @@ class Intro extends Component {
                             <Media>
                                 <Media.Body>
                                     <div className={classes.introTextContainer}>
-                                        <Media.Heading>BACK END</Media.Heading>
+                                        <Media.Heading><span>BACK END</span></Media.Heading>
                                         <p>NodeJS, ExpressJS, Ruby on Rails, Firebase, Webpack</p>
                                     </div>
                                 </Media.Body>
@@ -34,7 +34,7 @@ class Intro extends Component {
                             <Media>
                                 <Media.Body>
                                     <div className={classes.introTextContainer}>
-                                        <Media.Heading>DATABASES</Media.Heading>
+                                        <Media.Heading><span>DATABASES</span></Media.Heading>
                                         <p>MySQL, PostgreSQL, MongoDB, ActiveRecord</p>
                                     </div>
                                 </Media.Body>
@@ -42,7 +42,7 @@ class Intro extends Component {
                             <Media>
                                 <Media.Body>
                                     <div className={classes.introTextContainer}>
-                                        <Media.Heading>DEPLOYMENT & DEVELOPMENT TOOLS</Media.Heading>
+                                        <Media.Heading><span>DEPLOYMENT & DEVELOPMENT TOOLS</span></Media.Heading>
                                         <p>Linux (Ubuntu), Heroku, GitHub</p>
                                     </div>
                                 </Media.Body>
@@ -50,7 +50,7 @@ class Intro extends Component {
                             <Media>
                                 <Media.Body>
                                     <div className={classes.introTextContainer}>
-                                        <Media.Heading>ADDITIONAL SKILLS</Media.Heading>
+                                        <Media.Heading><span>ADDITIONAL SKILLS</span></Media.Heading>
                                         <p>Photoshop, Unity</p>
                                     </div>
                                 </Media.Body>
