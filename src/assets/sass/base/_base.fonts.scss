@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Dosis:500');
 
 $header-font-family: 'Lato', sans-serif;
-$middle-font-family: 'Ubuntu', sans-serif;
+$middle-font-family:  'Dosis', sans-serif;
 $header-font-size: 70px;
+$main-font-size: 50px;
+
 $font-weight-bold: bold;
 $font-weight-normal: normal;
 $font-weight-lighter: lighter;
 
-$intro-font-size: 20px;
-$intro-font-size-p: 18px;
+$font-underline: underline;    
+
+$largest-font-size: 22px;
+$large-font-size: 20px;
+$medium-font-size: 17px;
+$small-font-size: 15px;

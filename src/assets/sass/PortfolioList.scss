@@ -3,3 +3,61 @@
 @import 'base/_base.pallet';
 @import 'base/_base.images';
 @import 'base/_base.fonts';
+
+img { width: 100% }
+
+#portfolioListBackground {
+    background: linear-gradient($portfolioList-Background-color, #03080d);
+    .portfolioList:first-child {
+        @include add-space(margin-top, 30px)
+    }
+    .portfolioList { 
+        @include add-space(margin-bottom, 10%);
+        @include add-space(padding, 2%);
+        > h3 {
+            @include font-decoration(50px, $font-weight-bold, $header-font-family, $text-center);
+            @include  portfolio-border(border-bottom);
+            color: $portfolio-liner-color;
+            @include add-space(margin-bottom, 10px);
+            @include add-space(padding-bottom, 10px);
+        }
+        > p:first-of-type {
+            padding: $padding-none;
+        }
+        > p {
+        @include font-decoration($large-font-size, $font-weight-lighter, $middle-font-family, $text-center);
+        color: white;
+        @include add-space(padding, 10px);
+        }
+        .dotDecoration {
+            color: $portfolio-liner-color;
+        }
+        > .technologies {
+            @include portfolio-border(border-top);
+            color: $portfolio-liner-color;
+            margin-bottom: $margin-bottom-none;
+            padding-bottom: $padding-bottom-none;
+            font-family: $header-font-family;
+            font-size: $small-font-size;
+        }
+        .linkContainer {
+            text-align: $text-center;
+            @include add-space(margin-bottom, 10px);        
+            a {
+                cursor: pointer;
+                color: $portfolio-liner-color;
+                font-family: $header-font-family;
+                font-weight: $font-weight-bold;
+            }
+            a:first-of-type {
+                @include add-space(margin-right, 10px);
+            }
+            a:last-of-type {
+                @include add-space(margin-left, 10px);
+            }
+            span {
+                color: $portfolio-liner-color;;
+            }
+        }
+    }
+}

@@ -39,3 +39,12 @@
     font-family: $family;
     text-align: $location;
 }
+
+//portfoio
+@mixin portfolio-border($property) {
+    #{$property}: solid 1px #fff1b9;
+}
+
+@mixin add-space($property, $value) {
+    #{$property}: $value;
+}

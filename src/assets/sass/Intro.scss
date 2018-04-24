@@ -14,23 +14,21 @@
                 height: 100%;
                 //row
                 > div {
-                    > p {
-                        @include font-decoration($intro-font-size, $font-weight-bold, $header-font-family, $text-center);
-                        border-bottom: $border-bottom-solid 1px;
-                        padding-bottom: 5px;
-                        margin: 20px;
-                        margin-bottom: 50px;
+                    #whoAmI {
+                        @include font-decoration($largest-font-size, $font-weight-bold, $middle-font-family, $text-center);
+                        color: $color-who-am-i;
+                        margin: auto;
+                        margin-bottom: 20px;
                     }
 
                     .introTextContainer { 
                         text-align: center;
                         > h4 {
-                            color: grey;
-                            font-family: $header-font-family;
-                            font-weight: $font-weight-lighter;
+                            color: rgb(110, 110, 110);
+                            @include font-decoration($small-font-size, $font-weight-lighter, $header-font-family, $text-center)   
                         }
                         > p {
-                            font-size: $intro-font-size-p;
+                            font-size: $medium-font-size;
                         }
                     }
                     

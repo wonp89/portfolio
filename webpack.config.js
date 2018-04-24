@@ -1,5 +1,6 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
+const mqpacker = require('css-mqpacker');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
@@ -26,33 +27,33 @@ module.exports = {
                 test: /\.(css|scss|sass)$/,
                 exclude: /node_modules/,
                 use: ExtractTextPlugin.extract({
-                fallback: 'style-loader',
-                use: [
-                    { 
-                        loader: 'css-loader',
-                        options: {
-                            importLoaders: 1,
-                            modules: true,
-                            localIdentName: '[name]__[local]__[hash:base64:5]'
-                        }
-                     },
-                     { 
-                         loader: 'postcss-loader',
-                         options: {
-                             ident: 'postcss',
-                             plugins: () => [
-                                 autoprefixer({
-                                     browsers: [
-                                        "> 1%",
-                                        "last 2 versions"
-                                     ]
-                                 })
-                             ]
-                         }
-                      },
-                      { loader: 'sass-loader'}
-                ]
-            })
+                    fallback: 'style-loader',
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                importLoaders: 1,
+                                modules: true,
+                                localIdentName: '[name]__[local]__[hash:base64:5]'
+                            }
+                        },
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                ident: 'postcss',
+                                plugins: () => [
+                                    autoprefixer({
+                                        browsers: [
+                                            "> 1%",
+                                            "last 2 versions"
+                                        ]
+                                    })
+                                ]
+                            }
+                        },
+                        { loader: 'sass-loader' }
+                    ]
+                })
             },
             {
                 test: /\.(png|jpe?g|gif)$/,

@@ -1,15 +1,16 @@
+$margin-none: 0;
 $margin-top-none: 0;
 $margin-bottom-none: 0;
+
+$padding-none: 0;
+$padding-top-none: 0;
+$padding-bottom-none: 0;
 
 $text-right: right;
 $text-left: left;
 $text-center: center;
 
-$border-top-solid: solid;
-$border-bottom-solid: solid;
-$border-left-solid: solid;
-$border-right-solid: solid;
-
+$border-solid: solid 1px black;
 
 //center content
 %center-content {

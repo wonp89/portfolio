@@ -5,11 +5,11 @@
 @import 'base/_base.fonts';
 
 #portfolioBackground {
-    @include background-image($middle-background, 100vw, 70%);
+    @include background-image($middle-background, 100vw, 100%);
     @extend %center-content;
     > #portfolioHeader {
         > h1 {
-            @include font-decoration($header-font-size, $font-weight-lighter, $header-font-family, $text-center);
+            @include font-decoration($main-font-size, $font-weight-lighter, $header-font-family, $text-center);
             @include header-decoration(0, 0, solid, solid);
         }
         > p {
