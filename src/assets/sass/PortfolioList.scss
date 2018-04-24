@@ -8,12 +8,21 @@ img { width: 100% }
 
 #portfolioListBackground {
     background: linear-gradient($portfolioList-Background-color, #03080d);
+
     .portfolioList:first-child {
         @include add-space(margin-top, 30px)
     }
+
     .portfolioList { 
         @include add-space(margin-bottom, 10%);
         @include add-space(padding, 2%);
+
+        //add seperation for images (will be removed when screen size gets smaller)
+        .firstImageContainer { 
+            @include portfolio-border(border-right);
+        }
+
+        //title of the portfolios
         > h3 {
             @include font-decoration(50px, $font-weight-lighter, $header-font-family, $text-center);
             @include  portfolio-border(border-bottom);
@@ -21,25 +30,31 @@ img { width: 100% }
             @include add-space(margin-bottom, 10px);
             @include add-space(padding-bottom, 10px);
         }
+
         > p:first-of-type {
             padding: $padding-none;
         }
+
+        //about portfolio
         > p {
         @include font-decoration($large-font-size, $font-weight-lighter, $middle-font-family, $text-center);
         color: white;
         @include add-space(padding, 10px);
         }
+
         .dotDecoration {
             color: $portfolio-liner-color;
         }
+
         > .technologies {
             @include portfolio-border(border-top);
+            @include add-space(margin-bottom, $margin-none);
+            @include add-space(padding-bottom, $padding-none);
             color: $portfolio-liner-color;
-            margin-bottom: $margin-none;
-            padding-bottom: $padding-none;
             font-family: $header-font-family;
             font-size: $small-font-size;
         }
+
         .linkContainer {
             text-align: $text-center;
             @include add-space(margin-bottom, 10px);        
@@ -60,4 +75,10 @@ img { width: 100% }
             }
         }
     }
+}
+
+@media screen and (max-width: 991px) {
+    #portfolioListBackground {@include add-space(margin-top, -1px);}
+    .portfolioList > h3 { font-size: $title-font-size !important; }
+    .firstImageContainer {border-right: none !important; @include add-space(margin-bottom, 10px)}
 }

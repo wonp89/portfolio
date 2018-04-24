@@ -13,7 +13,7 @@ class PortfolioList extends Component {
                         <Row className={classes.portfolioList}>
                             <h3>SUSHI FIELD</h3>
                             <p className={classes.dotDecoration}>•</p>
-                            <Col md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
+                            <Col md={6} className={classes.firstImageContainer}>
                                 <img src="../src/assets/images/portfolio5-1.png" />
                             </Col>
                             <Col md={6} >
@@ -30,7 +30,7 @@ class PortfolioList extends Component {
                         <Row className={classes.portfolioList}>
                             <h3>MILL BAY SUSHI</h3>
                             <p className={classes.dotDecoration}>•</p>
-                            <Col md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
+                            <Col md={6} className={classes.firstImageContainer}>
                                 <img src="../src/assets/images/portfolio4-1.png" />
                             </Col>
                             <Col md={6}>
@@ -47,7 +47,7 @@ class PortfolioList extends Component {
                         <Row className={classes.portfolioList}>
                             <h3>MAZE RUNNER</h3>
                             <p className={classes.dotDecoration}>•</p>
-                            <Col md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
+                            <Col md={6} className={classes.firstImageContainer}>
                                 <img src="../src/assets/images/portfolio3-1.png" />
                             </Col>
                             <Col md={6}>
@@ -64,7 +64,7 @@ class PortfolioList extends Component {
                         <Row className={classes.portfolioList}>
                             <h3>ORDER HELPER</h3>
                             <p className={classes.dotDecoration}>•</p>
-                            <Col md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
+                            <Col md={6} className={classes.firstImageContainer}>
                                 <img src="../src/assets/images/portfolio2-1.png" />
                             </Col>
                             <Col md={6}>
@@ -81,7 +81,7 @@ class PortfolioList extends Component {
                         <Row className={classes.portfolioList}>
                             <h3>FORCE OF NATURE</h3>
                             <p className={classes.dotDecoration}>•</p>
-                            <Col md={6} style={{ borderRight: "solid 1px #fff1b9" }}>
+                            <Col md={6} className={classes.firstImageContainer}>
                                 <img src="../src/assets/images/portfolio1-1.png" />
                             </Col>
                             <Col md={6}>

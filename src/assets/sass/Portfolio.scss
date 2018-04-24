@@ -26,3 +26,7 @@
     }
     
 }
+
+@media screen and (max-width: 991px) {
+    #portfolioHeader > h1 { font-size: $main-font-size !important }
+}

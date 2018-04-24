@@ -18,7 +18,9 @@
                         @include font-decoration($largest-font-size, $font-weight-bold, $middle-font-family, $text-center);
                         color: $color-who-am-i;
                         margin: auto;
-                        margin-bottom: 20px;
+                        @include add-space(padding, 10px);
+                        @include add-space(margin, auto);
+                        @include add-space(margin-bottom, 20px);
                     }
 
                     .introTextContainer { 
@@ -40,6 +42,12 @@
         }
 }
 
-@media screen and (max-width: 1024px) {
-    #whoAmI {background-color: red;}
+@media screen and (max-width: 991px) {
+    #whoAmI {font-size: $large-font-size !important}
+    .introTextContainer { 
+        @include add-space(padding-right, 5px);
+        @include add-space(padding-left, 5px);
+        > h4 { font-size: $smallest-font-size !important;}
+        > p {font-size: $small-font-size !important;}
+    } 
 }
