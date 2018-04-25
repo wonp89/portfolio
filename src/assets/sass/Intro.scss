@@ -14,19 +14,27 @@
                 height: 100%;
                 //row
                 > div {
+
+                    .quotationMark {
+                        @include font-decoration($title-font-size, $font-weight-lighter, $middle-font-family, $text-center);
+                        @include add-space(margin-bottom, $margin-none);
+                        color: $color-who-am-i;
+                    }
+
                     #whoAmI {
                         @include font-decoration($largest-font-size, $font-weight-bold, $middle-font-family, $text-center);
                         color: $color-who-am-i;
-                        margin: auto;
                         @include add-space(padding, 10px);
                         @include add-space(margin, auto);
-                        @include add-space(margin-bottom, 20px);
+                        @include add-space(margin-top, -30px);
+                        @include add-space(margin-bottom, -15px);
+                        width:70%;
                     }
 
                     .introTextContainer { 
                         text-align: center;
                         > h4 {
-                            color: rgb(110, 110, 110);
+                            color: #246897;
                             @include font-decoration($small-font-size, $font-weight-lighter, $header-font-family, $text-center);
                             // > span {
                                 
@@ -43,7 +51,8 @@
 }
 
 @media screen and (max-width: 991px) {
-    #whoAmI {font-size: $large-font-size !important}
+    #introBackground {@include add-space(margin-top, 30px)}
+    #whoAmI {font-size: $large-font-size !important; width: 100% !important;}
     .introTextContainer { 
         @include add-space(padding-right, 5px);
         @include add-space(padding-left, 5px);

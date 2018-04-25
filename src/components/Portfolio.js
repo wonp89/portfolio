@@ -8,7 +8,7 @@ class Portfolio extends Component {
             <div id={classes.portfolioBackground}>
                 <div id={classes.portfolioHeader}>
                     <h1>PORTFOLIO</h1>
-                    <p><a href="#" target="_blank">VIEW SOUCE CODE FOR THIS WEBSITE</a></p>
+                    <p><a href="https://github.com/wonp89/portfolio" target="_blank">VIEW SOUCE CODE FOR THIS WEBSITE</a></p>
                 </div>
             </div>
         )
