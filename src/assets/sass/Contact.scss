@@ -9,27 +9,38 @@
     @extend %center-content;
     color: white;
     > #header { 
+        text-align: $text-center;
+
         > h1 {
-            @include font-decoration($header-font-size, $font-weight-lighter, $header-font-family, $text-center);
             @include add-space(margin-bottom, 20px);
-            @include add-space(margin-top, -20px);
-            // @extend %black-and-white;
+            @include font-decoration($header-font-size, $font-weight-normal, $header-font-family, $text-center);
+            @include header-decoration(0, 0, solid)
         }
 
-        > p:first-of-type {
-            font-size: $large-font-size;
+        > span{
+            @include add-space(padding, 5px);
+            @include font-decoration( $email-font-size, $font-weight-lighter, $header-font-family, $text-center);
         }
-        text-align: $text-center;
+        
+        > div {
+            @include add-space(margin-top, 20px);
+        }
+
         > div > a {
             font-size: $large-font-size;
             color: white;
+            cursor: pointer;
+        }
+        img {
+            width: 70px;
+        }
+        img:first-of-type {
+            @include add-space(margin-right, 10px);
         }
     }
 }
 
 @media screen and (max-width: 991px) {
     #header > h1 { font-size: $main-font-size !important;}
-}
-@media screen and (max-width: 577px) {
-    #contactBackground {background-size: unset !important;} 
+    #header > span { font-size: 23px !important;}
 }

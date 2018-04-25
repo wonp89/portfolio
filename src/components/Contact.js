@@ -8,15 +8,10 @@ class Header extends Component {
             <div id={classes.contactBackground}>
                 <div id={classes.header}>
                     <h1>CONTACT</h1>
-                    <p>wonpark89@gmail.com</p>
+                    <span>wonpark89@gmail.com</span>
                     <div>
-                        <a href="https://www.linkedin.com/in/wonpark89" target="_blank">linkedin.com/in/wonpark89</a>
-                    </div>
-                    <div>
-                        <p></p>
-                    </div>
-                    <div>
-                        <a href="https://www.github.com/wonp89" target="_blank">github.com/wonp89</a>
+                        <a href="https://www.linkedin.com/in/wonpark89" target="_blank"><img src="../src/assets/images/linkedin.png" /></a>
+                        <a href="https://www.github.com/wonp89" target="_blank"><img src="../src/assets/images/git.png" /></a>
                     </div>
                 </div>
             </div>

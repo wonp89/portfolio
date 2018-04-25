@@ -18,12 +18,10 @@
 @mixin header-decoration(
     $top,
     $bottom,
-    $border-top,
     $border-bottom
 ) {
     margin-top: $top;
     margin-bottom: $bottom;
-    border-top: $border-top;
     border-bottom: $border-bottom;
 }
 

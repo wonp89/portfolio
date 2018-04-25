@@ -10,7 +10,7 @@
     > #header {
         > h1 {
             @include font-decoration($header-font-size, $font-weight-normal, $header-font-family, $text-center);
-            @include header-decoration(0, 0, solid, solid);
+            @include header-decoration(0, 0, solid);
             // @extend %black-and-white;
         }
         > p {

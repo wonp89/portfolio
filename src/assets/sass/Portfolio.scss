@@ -9,7 +9,7 @@
     @extend %center-content;
     > #portfolioHeader {
         > h1 {
-            @include font-decoration($header-font-size, $font-weight-lighter, $header-font-family, $text-center);
+            @include font-decoration($header-font-size, $font-weight-normal, $header-font-family, $text-center);
         }
         > p {
             text-align: $text-center;
