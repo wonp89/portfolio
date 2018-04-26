@@ -16,7 +16,6 @@
             > a {
                 @extend %white-and-black;
                 @include add-space(padding, 9px);
-                cursor: pointer;
             }
             > a:hover {
                 @extend %black-and-white;

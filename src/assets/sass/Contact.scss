@@ -10,32 +10,53 @@
     color: white;
     > #header { 
         text-align: $text-center;
-
         > h1 {
             @include add-space(margin-bottom, 20px);
             @include font-decoration($header-font-size, $font-weight-normal, $header-font-family, $text-center);
-            @include header-decoration(0, 0, solid)
+            @include header-decoration(0, 0, solid);
+            color: $portfolio-liner-color;
         }
-
-        > span{
+        //email
+        > span {
             @include add-space(padding, 5px);
             @include font-decoration( $email-font-size, $font-weight-lighter, $header-font-family, $text-center);
         }
-        
+        //contact link container
         > div {
-            @include add-space(margin-top, 20px);
+            @include add-space(margin-top, 10px);
+        }
+        //resume link container
+        > div > p {
+            @include add-space(margin-top, 7px);
+        }
+        > div > a {
+            font-size: 80px;
+            cursor: pointer;
+            color: white;
+        }
+        > div > a:first-of-type {
+            @include add-space(margin-right, 10px);
+        }
+        #resume {
+           @extend %resume;
+           background-color: white;
         }
 
-        > div > a {
-            font-size: $large-font-size;
-            color: white;
-            cursor: pointer;
+        //hover effect for links
+        > div > a:first-of-type {
+             @include focus() {
+                 color: $linkedin-color;
+             }
         }
-        img {
-            width: 70px;
+        > div > a:last-of-type {
+             @include focus() {
+                 color: $git-color;
+             }
         }
-        img:first-of-type {
-            @include add-space(margin-right, 10px);
+        #resume:hover {
+            @include focus() {
+                background-color: $resume-color;
+            }
         }
     }
 }

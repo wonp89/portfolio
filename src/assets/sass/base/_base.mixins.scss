@@ -46,3 +46,10 @@
 @mixin add-space($property, $value) {
     #{$property}: $value;
 }
+
+//hover effect for contact link
+@mixin focus() {
+    &:hover {
+        @content
+    }
+}

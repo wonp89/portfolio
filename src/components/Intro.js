@@ -21,7 +21,7 @@ class Intro extends Component {
                                 <Media.Body>
                                     <div className={classes.introTextContainer}>
                                         <Media.Heading><span>FRONT END</span></Media.Heading>
-                                        <p>JavaScript, Typescript, Ruby, HTML5, CSS3, SASS, ReactJS, Redux, Angular, jQuery</p>
+                                        <p>JavaScript, Typescript, Ruby, HTML5, CSS3, SASS, ReactJS, Redux, Angular, AJAX, jQuery</p>
                                     </div>
                                 </Media.Body>
                             </Media>

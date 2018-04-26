@@ -57,16 +57,16 @@ img { width: 100% }
 
         .linkContainer {
             text-align: $text-center;
-            @include add-space(margin-bottom, 10px);        
+            @include add-space(margin-bottom, 10px);      
             a {
-                cursor: pointer;
+                cursor: pointer;   
                 color: $portfolio-liner-color;
                 font-family: $header-font-family;
                 font-weight: $font-weight-bold;
             }
             a:first-of-type {
                 @include add-space(margin-right, 10px);
-            }
+            } 
             a:last-of-type {
                 @include add-space(margin-left, 10px);
             }
