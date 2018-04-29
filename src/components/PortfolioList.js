@@ -11,7 +11,7 @@ class PortfolioList extends Component {
                     <Grid>
 
                         <Row className={classes.portfolioList}>
-                            <h3>SUSHI FIELD</h3>
+                            <h3>CONNECT SCHOOL</h3>
                             <p className={classes.dotDecoration}>•</p>
                             <Col md={6} className={classes.firstImageContainer}>
                                 <img src="../src/assets/images/portfolio6-1.png" />
@@ -41,7 +41,7 @@ class PortfolioList extends Component {
                                 <a href="https://github.com/wonp89/sushi-field" target="_blank">SOURCE CODE</a><span> | </span><a href="http://www.sushifield.com" target="_blank">VIEW WEBSITE</a>
                             </div>
                             <p className={classes.technologies}> NodeJS with Typescript, ExpressJS, Angular, MongoDB, Bootstrap, Jquery, GoogleMap Api</p>
-                            <p> A Japanese restaurant website that owner has full control on editing the menu.</p>
+                            <p> A Japanese restaurant website that owner has full control on updating the menu.</p>
                         </Row>
 
                         <Row className={classes.portfolioList}>
