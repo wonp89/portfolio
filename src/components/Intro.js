@@ -10,13 +10,7 @@ class Intro extends Component {
                 <Grid>
                     <div>{/* flex with ceterizing */}
                         <Row className="show-grid">
-                            <Media>
-                                <Media.Body>
-                                    <p className={classes.quotationMark}>❝</p>
-                                    <p id={classes.whoAmI}>I am a web developer who has passion in learning new web technologies and creating innovative websites that satisfy people. I also love exploring nature such as hiking and swimming in the ocean.</p>
-                                    <p className={classes.quotationMark}>❞</p>
-                                </Media.Body>
-                            </Media>
+                            <h1>SKILLS</h1>
                             <Media>
                                 <Media.Body>
                                     <div className={classes.introTextContainer}>

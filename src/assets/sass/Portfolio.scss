@@ -5,6 +5,7 @@
 @import 'base/_base.fonts';
 
 #portfolioBackground {
+    @include add-space(margin-top, 10%);
     @include background-image($middle-background, 100vw, 100%);
     @extend %center-content;
     > #portfolioHeader {

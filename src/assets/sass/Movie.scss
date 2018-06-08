@@ -1,0 +1,10 @@
+@import 'base/_base.settings';
+
+#movieContainer {
+    display: flex;
+    justify-content: center;
+
+    #myVideo {
+        @extend %movie ;
+    }
+}

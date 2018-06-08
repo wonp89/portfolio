@@ -35,3 +35,14 @@ $border-solid: solid 1px black;
     border-radius: 5px;
     text-decoration: none;
 }
+
+%movie {
+    width: 100%;
+    opacity: 0.2;
+    position: absolute;
+    height:100vh;
+    z-index: -1;
+    width: 80%;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0 100%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0 100%, 0% 25%);
+}

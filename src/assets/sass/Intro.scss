@@ -5,7 +5,6 @@
 @import 'base/_base.fonts';
 
 #introBackground{
-    @include background-image($intro-background, 100vw, 100%);
         //container    
         > div { 
             //flex container
@@ -14,28 +13,15 @@
                 height: 100%;
                 //row
                 > div {
-
-                    .quotationMark {
-                        @include font-decoration($title-font-size, $font-weight-lighter, $middle-font-family, $text-center);
-                        @include add-space(margin-bottom, $margin-none);
-                        color: $color-who-am-i;
+                    h1 {
+                        @include font-decoration($header-font-size, $font-weight-normal, $header-font-family, $text-center);
+                        @include add-space(margin-bottom, 3rem);
                     }
-
-                    #whoAmI {
-                        @include font-decoration($largest-font-size, $font-weight-bold, $middle-font-family, $text-center);
-                        color: $color-who-am-i;
-                        @include add-space(padding, 10px);
-                        @include add-space(margin, auto);
-                        @include add-space(margin-top, -30px);
-                        @include add-space(margin-bottom, -15px);
-                        width:70%;
-                    }
-
                     .introTextContainer { 
                         text-align: center;
                         > h4 {
-                            color: #246897;
-                            @include font-decoration($small-font-size, $font-weight-lighter, $header-font-family, $text-center);
+                            color: #000000;
+                            @include font-decoration($large-font-size, $font-weight-lighter, $header-font-family, $text-center);
                             // > span {
                                 
                             // } 

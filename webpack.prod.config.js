@@ -60,6 +60,10 @@ module.exports = {
                 test: /\.(png|jpe?g|gif)$/,
                 loader: 'url-loader?limit=8000&name=images/[name].[ext]'
             },
+            {
+                test: /\.(mov|mp4)$/,
+                 loader: "file-loader?name=/src/assets/images/[name].[ext]"
+            }
         ]
     },
     plugins: [
