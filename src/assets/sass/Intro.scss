@@ -13,21 +13,15 @@
                 height: 100%;
                 //row
                 > div {
-                    h1 {
-                        @include font-decoration($header-font-size, $font-weight-normal, $header-font-family, $text-center);
-                        @include add-space(margin-bottom, 3rem);
-                    }
                     .introTextContainer { 
                         text-align: center;
                         > h4 {
                             color: #000000;
-                            @include font-decoration($large-font-size, $font-weight-lighter, $header-font-family, $text-center);
-                            // > span {
-                                
-                            // } 
+                            @include font-decoration($small-font-size, $font-weight-lighter, $header-font-family, $text-center);
                         }
                         > p {
                             font-size: $medium-font-size;
+                            color:black;
                         }
                     }
                     

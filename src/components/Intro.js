@@ -10,7 +10,7 @@ class Intro extends Component {
                 <Grid>
                     <div>{/* flex with ceterizing */}
                         <Row className="show-grid">
-                            <h1>SKILLS</h1>
+
                             <Media>
                                 <Media.Body>
                                     <div className={classes.introTextContainer}>
