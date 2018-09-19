@@ -36,15 +36,6 @@ $border-solid: solid 1px black;
     text-decoration: none;
 }
 
-%movie {
-    opacity: 0.2;
-    position: absolute;
-    height:100vh;
-    z-index: -1;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 89%, 0 16%);
-    clip-path: polygon(100% 0, 100% 100%, 0 89%, 0 16%);
-}
-
 %nav-box {
     width: 90px;
     position: fixed;
@@ -74,3 +65,4 @@ $border-solid: solid 1px black;
     transition: width 0.3s;
     z-index:-1;
 }
+

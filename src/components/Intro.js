@@ -10,12 +10,19 @@ class Intro extends Component {
                 <Grid>
                     <div>{/* flex with ceterizing */}
                         <Row className="show-grid">
-
+                            <Media>
+                                <Media.Body>
+                                    <div className={[classes.introTextContainer, classes.firstIntroContainer].join(' ')}>
+                                        <Media.Heading><h1>Hello, My Name is Won!</h1></Media.Heading>
+                                        <p>I am a web developer who lives in Vancouver, Canada. The most exciting part of web development is the moment that I build web apps that people can actually use. I like sharing ideas with people and challenging myself to acquire new knowledge. Other than coding, I enjoy hiking, cooking and eating.</p>
+                                    </div>
+                                </Media.Body>
+                            </Media>
                             <Media>
                                 <Media.Body>
                                     <div className={classes.introTextContainer}>
                                         <Media.Heading><span>FRONT END</span></Media.Heading>
-                                        <p>JavaScript, Typescript, HTML5, CSS3, SASS, ReactJS, Redux, Angular, AJAX, jQuery</p>
+                                        <p>JavaScript, Typescript, ReactJS, React-Native, Redux, Angular2+, HTML5, CSS3, SASS, AJAX, jQuery</p>
                                     </div>
                                 </Media.Body>
                             </Media>
@@ -23,7 +30,7 @@ class Intro extends Component {
                                 <Media.Body>
                                     <div className={classes.introTextContainer}>
                                         <Media.Heading><span>BACK END</span></Media.Heading>
-                                        <p>NodeJS, ExpressJS, Ruby on Rails, Firebase, Webpack</p>
+                                        <p>NodeJS, ExpressJS, Ruby on Rails, Webpack</p>
                                     </div>
                                 </Media.Body>
                             </Media>
@@ -31,7 +38,7 @@ class Intro extends Component {
                                 <Media.Body>
                                     <div className={classes.introTextContainer}>
                                         <Media.Heading><span>DATABASES</span></Media.Heading>
-                                        <p>MySQL, PostgreSQL, MongoDB, ActiveRecord</p>
+                                        <p>PostgreSQL, MongoDB, Firebase, ActiveRecord</p>
                                     </div>
                                 </Media.Body>
                             </Media>

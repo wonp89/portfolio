@@ -5,7 +5,7 @@
 @import 'base/_base.fonts';
 
 #contactBackground {
-    @include background-image($bottom-background, 100vw, 100%);
+    @include background-image($bottom-background, 100%, 100%);
     @extend %center-content;
     color: white;
     > #header { 

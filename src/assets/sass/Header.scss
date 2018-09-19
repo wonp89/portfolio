@@ -5,7 +5,7 @@
 @import 'base/_base.fonts';
 
 #headerBackground {
-    @include background-image($top-background, 100vw, 100%);
+    @include background-image($top-background, 100%, 100%);
     @extend %center-content;
 
     > #navContainer {
@@ -33,11 +33,39 @@
     }
 
     > #header {
-        > h1 {
+        .myName {
             @include font-decoration($header-font-size, $font-weight-normal, $header-font-family, $text-center);
             @include header-decoration(0, 0, solid);
-            // @extend %black-and-white;
+            -webkit-animation: myName 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: myName 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
         }
+        @-webkit-keyframes myName {
+            0% {
+              letter-spacing: 1em;
+              opacity: 0;
+            }
+            40% {
+              opacity: 0.6;
+            }
+            100% {
+              letter-spacing: normal;
+              opacity: 1;
+            }
+          }
+          @keyframes myName {
+            0% {
+              letter-spacing: 1em;
+              opacity: 0;
+            }
+            40% {
+              opacity: 0.6;
+            }
+            100% {
+              letter-spacing: normal;
+              opacity: 1;
+            }
+          }
+          
         > p {
             text-align: $text-center;
         }
@@ -48,3 +76,4 @@
 @media screen and (max-width: 991px) {
     #header > h1 { font-size:$main-font-size !important}
 }
+

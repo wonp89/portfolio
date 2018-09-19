@@ -5,8 +5,9 @@
 @import 'base/_base.fonts';
 
 #portfolioBackground {
-    @include background-image($middle-background, 100vw, 100%);
+    @include background-image($middle-background, 100%, 100%);
     @extend %center-content;
+    @include add-space(margin-top, 40px);
     > #portfolioHeader {
         > h1 {
             @include font-decoration($header-font-size, $font-weight-normal, $header-font-family, $text-center);
@@ -16,10 +17,12 @@
             > a {
                 @extend %white-and-black;
                 @include add-space(padding, 9px);
+                transition: 0.3s;
             }
             > a:hover {
                 @extend %black-and-white;
                 text-decoration: none;
+                box-shadow: 5px 5px #8d8d8d;
             }
         }
     }

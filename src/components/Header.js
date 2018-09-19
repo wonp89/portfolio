@@ -13,11 +13,11 @@ class Header extends Component {
             <div id={classes.headerBackground}>
 
                 <div id={classes.navContainer}>
-                    <div style={this.state.open === true ? { color: 'rgb(255, 230, 132)' } : null} onClick={() => this.setState({ open: !this.state.open })}>☰</div>
+                    <div className={classes.navDropdown} style={this.state.open === true ? { color: 'rgb(255, 230, 132)' } : null} onClick={() => this.setState({ open: !this.state.open })}>☰</div>
                     <Collapse in={this.state.open}>
                         <div>
-                            <ul class="list-unstyled">
-                                <Scroll type="id" element="Movie__movieContainer__3PuWH">
+                            <ul class="list-unstyled" id={classes.linkList}>
+                                <Scroll type="id" element="Intro__introBackground__1Q0rq">
                                     <li>SKILLS</li>
                                 </Scroll>
                                 <Scroll type="id" element="Portfolio__portfolioBackground__EStaT">
@@ -32,7 +32,7 @@ class Header extends Component {
                 </div>
 
                 <div id={classes.header}>
-                    <h1>WON PARK</h1>
+                    <h1 className={classes.myName}>WON PARK</h1>
                     <p>WEB DEVELOPER</p>
                 </div>
             </div>
