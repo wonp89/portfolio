@@ -30,6 +30,9 @@
                     .firstIntroContainer {
                         margin-bottom: $title-font-size;
                         font-weight: 300;
+                        > p {
+                            line-height: 2em;
+                        }
                     }
                 }
             }

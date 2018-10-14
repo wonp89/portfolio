@@ -24,7 +24,7 @@ class PortfolioList extends Component {
                                 <a href="https://github.com/wonp89/connect-school" target="_blank">SOURCE CODE</a><span> | </span><a href="https://connect-school.herokuapp.com" target="_blank">VIEW WEBSITE</a>
                             </div>
                             <p className={classes.technologies}> NodeJS, ExpressJS, ReactJS, Redux, MongoDB, PassportJS, Sendgrid, Materialize-css, Redux-Form</p>
-                            <p> This is the longterm project which I’m focusing on connecting the students in Vancouver. The feature that my website has at the moment is that the users can create events by selecting schools they have enrolled. As soon as users joined the events, they will get confirmation emails with the event details. Users will also have a separate pages that display the events that they have joined. If the date of the event has passed, the event post will be automatically disabled and remained as “expired event”. Users can also sign out from the events and their names will be removed from the lists of participants. More features will be added in the future.</p>
+                            <p> A website that connects students in Vancouver by creating and joining events. A user can login in with his/her google account and search through the events by selecting school names. When user join the event, he/she will get a confirmation email with the event detail. If the event date has been expired, the event status will be automatically changed to ‘expired event’. User can also view joined or expired event from user Information page. If user changed major or transferred to another school, he/she can updates the user information anytime. This project has been achieved with NoSql database and react/redux.</p>
                         </Row>
 
                         <Row className={classes.portfolioList}>
@@ -41,7 +41,8 @@ class PortfolioList extends Component {
                                 <a href="https://github.com/wonp89/sushi-field" target="_blank">SOURCE CODE</a><span> | </span><a href="http://www.sushifield.com" target="_blank">VIEW WEBSITE</a>
                             </div>
                             <p className={classes.technologies}> NodeJS with Typescript, ExpressJS, Angular, MongoDB, Bootstrap, Jquery, GoogleMap Api</p>
-                            <p> A Japanese restaurant website that the owner has full control on updating the menu.</p>
+                            <p>  A Japanese restaurant website that owner has full control on updating the menu. The owner can login with his account and set up names, prices, and descriptions for his menus. The menu can be also moved from one section to another. Both backend and frontend are done with typescript.
+                            </p>
                         </Row>
 
                         <Row className={classes.portfolioList}>
@@ -58,7 +59,8 @@ class PortfolioList extends Component {
                                 <a href="https://github.com/wonp89/MillBay-Sushi" target="_blank">SOURCE CODE</a><span> | </span><a href="http://www.millbaysushi.com" target="_blank">VIEW WEBSITE</a>
                             </div>
                             <p className={classes.technologies}>NodeJS, ReactJS, Nodemailer, Google OAuth2, GoogleMap Api, MaterialUI</p>
-                            <p>A Japanese restaurant website with a sending email option.</p>
+                            <p>A static Japanese restaurant website with unique design and illustrations. A customer can send an email to the owner directly through the website.
+                            </p>
                         </Row>
 
                         <Row className={classes.portfolioList}>
@@ -75,7 +77,7 @@ class PortfolioList extends Component {
                                 <a href="https://github.com/wonp89/GGJ2018" target="_blank">SOURCE CODE</a><span> | </span><a href="https://globalgamejam.org/2018/games/mazerunner" target="_blank">DOWNLOAD GAME</a>
                             </div>
                             <p className={classes.technologies}>Unity and C#</p>
-                            <p>A 3D maze escaping mini-game that player gets 30 secs to memorize the maze, and then transfer the movement data to the robot by typing arrow keys.</p>
+                            <p>A 3D maze escaping mini-game that player gets 30 secs to memorize the maze, and then transfer the movement data to the robot by typing arrow keys. 4 members including my-self joined hackathon to achieve this project. I was responsible for camera movement, lighting, and overall design of the maze.</p>
                         </Row>
 
                         <Row className={classes.portfolioList}>
@@ -92,7 +94,8 @@ class PortfolioList extends Component {
                                 <a href="https://github.com/wonp89/orderHelper" target="_blank">SOURCE CODE</a>
                             </div>
                             <p className={classes.technologies}> NodeJS, ExpressJS, PostgreSQL, Knex, Bootstrap, Jquery, GoogleMap Api</p>
-                            <p>Restaurant owners create order lists for keeping track of many different suppliers. They can also send orders with their lists to the suppliers. The suppliers then receive orders and keep track of many different restaurants order lists. </p>
+                            <p>There are two types of users in this project. One is a restaurant owner, and the other is a supplier. When restaurant owner select a name of supplier, they will be connected to each other to share the lists of orders and delivery status. Restaurant owner can send orders to the suppliers after updating the lists. When suppliers received orders, a map of the restaurant location and estimated travel time will be shown. This project is a good example of MVC, server side rendering, and complex structure of postgresql data table.
+                            </p>
                         </Row>
 
                         <Row className={classes.portfolioList}>

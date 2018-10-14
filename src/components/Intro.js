@@ -18,7 +18,7 @@ class Intro extends Component {
                                     </div>
                                 </Media.Body>
                             </Media>
-                            <Media>
+                            <Media style={{ marginTop: 0 }}>
                                 <Media.Body>
                                     <div className={classes.introTextContainer}>
                                         <Media.Heading><span>FRONT END</span></Media.Heading>
